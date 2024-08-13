@@ -1,4 +1,4 @@
-ximport {NgModule} from '@angular/core';
+import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {LoginAdminComponent} from './login/login-admin/login-admin.component';
 import {LojaProdutoComponent} from './produto/loja-produto/loja-produto.component';
