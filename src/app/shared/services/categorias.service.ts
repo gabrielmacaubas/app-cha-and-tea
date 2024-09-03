@@ -6,8 +6,7 @@ import { Injectable } from '@angular/core';
 export class CategoriasService {
   private readonly _categorias: string[];
   constructor() {
-    this._categorias = ['Fertilizantes',
-      'Ferramentas', 'Mudas', 'Sementes', 'Acessórios', 'Bancos para jardim', 'Vasos de plantas'];
+    this._categorias = ['Chá', 'Folhas', 'Acessórios', 'Feminino'];
   }
 
   listar(): string[] {
