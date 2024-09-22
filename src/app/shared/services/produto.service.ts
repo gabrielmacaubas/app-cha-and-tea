@@ -22,8 +22,8 @@ export class ProdutoService {
     return this.http.post<Produto>(`${this.URL_PRODUTOS}`, produto);
   }
 
-  localizar(id: number): Observable<number> {
-    return this.http.get<number>(`${this.URL_PRODUTOS}/${id}`);
+  localizar(id: number): Observable<Produto> {
+    return this.http.get<Produto>(`${this.URL_PRODUTOS}/${id}`);
   }
 
   remover(id: number): Observable<void> {

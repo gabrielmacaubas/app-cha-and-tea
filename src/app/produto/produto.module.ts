@@ -16,6 +16,7 @@ import { EditarProdutoComponent } from './editar-produto/editar-produto.componen
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { PesquisaProdutoComponent } from './pesquisa-produto/pesquisa-produto.component';
 import {MatMenuModule} from "@angular/material/menu";
+import { DetalhesProdutoComponent } from './detalhes-produto/detalhes-produto.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatMenuModule} from "@angular/material/menu";
     CadastrarProdutoComponent,
     ListagemProdutoComponent,
     EditarProdutoComponent,
-    PesquisaProdutoComponent
+    PesquisaProdutoComponent,
+    DetalhesProdutoComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,22 @@
+<div class="product-container">
+  <mat-card class="product-card">
+    <div class="product-image">
+      <img mat-card-image [src]="produto.urlDaImagem" alt="{{ produto.nome }}" />
+    </div>
+    <div class="product-details">
+      <div>
+        <h2 class="product-title">{{ produto.nome }}</h2>
+        <p class="product-category">Categoria - {{ produto.categoria }}</p>
+      </div>
+      <p class="product-description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga architecto mollitia
+        totam maxime sed ut natus non, dolor ipsam cum vero quasi dolores officia a sint nesciunt
+        quam incidunt voluptatum!
+      </p>
+      <p class="product-price">R{{ produto.preco | currency }}</p>
+      <button mat-raised-button color="primary" (click)="addToCart(produto)">
+        Adicionar ao Carrinho
+      </button>
+    </div>
+  </mat-card>
+</div>

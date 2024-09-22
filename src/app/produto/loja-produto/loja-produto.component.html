@@ -78,7 +78,7 @@
             </p>
           </mat-card-content>
           <mat-card-actions class="card-actions">
-            <button mat-button>Detalhes</button>
+            <button mat-button [routerLink]="['/produto', product.id]">Detalhes</button>
             <button mat-icon-button (click)="addProductToCart(product)">
               <mat-icon>add</mat-icon>
             </button>

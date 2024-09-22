@@ -10,6 +10,7 @@ import {ListagemPedidoComponent} from './pedido/listagem-pedido/listagem-pedido.
 import {LoginClienteComponent} from "./login/login-cliente/login-cliente.component";
 import {AuthGuard} from "./shared/services/auth.guard";
 import {LoginGuard} from "./shared/services/login.guard";
+import { DetalhesProdutoComponent } from './produto/detalhes-produto/detalhes-produto.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,9 @@ const routes: Routes = [
     path: 'listagem-pedido',
     component: ListagemPedidoComponent
   },
+  {
+    path: 'produto/:id',
+    component: DetalhesProdutoComponent },
   {
     path: '**',
     redirectTo: 'loja-produtos'
